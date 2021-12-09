@@ -1,0 +1,31 @@
+{
+    "name": "web-component-exploration",
+    "author": "Scott Ward",
+    "private": "true",
+    "scripts": {
+        "build": "webpack",
+        "lint": "eslint .",
+        "start": "web-dev-server",
+        "start:watch": "web-dev-server --watch"
+    },
+    "dependencies": {
+        "@brandwatch/axiom-materials": "^1.39.0",
+        "@vizia/format": "^1.1.3",
+        "lit": "^2.0.2",
+        "ts-loader": "^9.2.6"
+    },
+    "devDependencies": {
+        "@vizia/vizia-css": "^5",
+        "@vizia-apps/bundle-total-mentions": "3.1.5",
+        "@web/dev-server": "^0.1.28",
+        "@web/dev-server-esbuild": "^0.2.16",
+        "css-loader": "6.5.1",
+        "eslint": "^8.2.0",
+        "html-webpack-plugin": "5.5.0",
+        "process": "0.11.10",
+        "style-loader": "3.3.1",
+        "typescript": "^4.4.4",
+        "webpack": "5.64.1",
+        "webpack-cli": "4.9.1"
+    }
+}

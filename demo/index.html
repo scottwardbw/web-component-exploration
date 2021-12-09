@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="../dist/bundle.js"></script>
+
+    <style>
+        .ViziaComponent__content {
+            align-items: center;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .ViziaComponent__iframe {
+            border: 0;
+            flex-grow: 1;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <my-element></my-element> -->
+    <key-metrics
+        configuration='{"bwApiRootUrl":"https://newapi.stage.brandwatch.net","destTarget":"#bundle-container","endDate":"2021-11-11T00:00:00+0000","filter":{"queryId":[161375145]},"locale":"en-GB","projectId":161375132,"startDate":"2021-11-01T00:00:00+0000","timezone":"Europe/London","token":"295077d6-3009-45b4-a6c0-2a097852fe4f"}'
+        data='{"comparisonValue":91967,"label":"Total Mentions","value":82028}'></key-metrics>
+
+    <div class="ViziaComponent__content">
+        <iframe class="ViziaComponent__iframe"
+            src="https://bundle-loader.vizia-stage.gcp0.bwcom.net?bundle=reddit-top-subreddits&amp;themeId=brandwatch-dark"></iframe>
+    </div>
+    <div id="bundle-container"></div>
+</body>
+
+<script>
+    var el = document.querySelector('iframe');
+
+    el.addEventListener('load', function () {
+        var config = {
+            config: {
+                colors: {
+                    palette: {},
+                    category: {},
+                    query: {}
+                },
+                nsfw: {
+                    drug: "none",
+                    explicit: "moderate",
+                    gore: "none"
+                },
+                locale: "en-GB",
+                themeId: "brandwatch-dark",
+                theme: {
+                    id: 2,
+                    mode: "dark",
+                    logoSrc: "https://cdn.vizia.brandwatch.com/assets/brandwatch-logo.svg",
+                    primaryColor: "#906BA7",
+                    surfaceColor: "#906BA7",
+                    secondaryColor: "#239EDB",
+                    usePrimaryHeader: false,
+                    surfaceSaturation: "subtle"
+                },
+                timezone: "Etc/UTC",
+                scene: {
+                    id: "draft",
+                    name: "Top Subreddits",
+                    legacy: {},
+                    options: {
+                        filter: {
+                            gender: null,
+                            queryId: [
+                                161375145
+                            ],
+                            twitterRole: null,
+                            audienceList: [],
+                            facebookRole: null,
+                            xaudienceList: [],
+                            twitterVerified: null
+                        },
+                        orderBy: "volume",
+                        projectId: 161375132,
+                        dateDuration: "P7D",
+                        _vizia_metadata: {
+                            created_with: "bcr"
+                        }
+                    },
+                    slide_id: 1,
+                    created_by: "166044911",
+                    created_on: "2021-11-19T15:44:43.333538+00:00",
+                    show_header: true,
+                    last_modified_by: "166044911",
+                    last_modified_on: "2021-11-19T15:44:43.333538+00:00",
+                    component_type_id: "reddit-top-subreddits",
+                    type: "reddit-top-subreddits"
+                },
+                bwApiRootUrl: "https://api.stage.brandwatch.net/",
+                imagecheckRootUrl: "https://image-service.platform-stage.gcp0.bwcom.net/",
+                token: "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjYxNDY0NjZkMThlYmI1OTFiYTMwN2VhMzlmOGY0ODkyOTFmZTE1M2MifQ.eyJlbWFpbCI6InNjb3R0LndhcmRAYnJhbmR3YXRjaC5jb20iLCJmaXJzdE5hbWUiOiJTY290dCIsImxhc3ROYW1lIjoiV2FyZCIsImNsaWVudElkIjozLCJyb2xlcyI6W10sInNjb3BlIjp7fSwiYXBpMkFjY2Vzc1Rva2VuIjoiZXlKaGJHY2lPaUpTVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0lzSW10cFpDSTZJall4TkRZME5qWmtNVGhsWW1JMU9URmlZVE13TjJWaE16bG1PR1kwT0RreU9URm1aVEUxTTJNaWZRLmV5SnliMnhsY3lJNld5SkNWMTlDUVZOSlExOVZVMFZTSWl3aVFsZGZRVVJOU1U1ZlZWTkZVaUpkTENKelkyOXdaU0k2ZTMwc0ltVjRjQ0k2TVRZek56VTNOVFkyTUN3aVlYVmtJanBiSW5acGVtbGhMbUp5WVc1a2QyRjBZMmd1WTI5dEwyWnZiM1F0WjNWdUlpd2lZWEJwTG1KeVlXNWtkMkYwWTJndVkyOXRJbDBzSW1semN5STZJbXh2WjJsdUxtSnlZVzVrZDJGMFkyZ3VZMjl0SWl3aWMzVmlJam9pTVRZMk1EUTBPVEV4SW4wLktEUHhfU1N1UHk0VjdWaVdHVHZpWGJKdEkzOUJIWG8yalBIanVwWkxYX0dXLXgtenE2QWdQcEszMFhvbFRCd3Q0WEx0MldBV29KSGtxTHV5bDlJcHR3WTAxWElTTHNnYnJtN0pqbkJhbW1Qd3FMTWFTbW84WU5fN1JiYkRMNU8yTE4zN2JRbzV3MmpiMTdCVFQzZk9SOEpVdmRqZ1ZMQ2ZnRjN3bEt5NG1GcHlRcERCc2ZUUFJKUGRUdEFSUnpubHBJRnhtaENicUFzal8wX0F4R25haVQzMDAxUHF3dGlvTmVTSDV1UGZMSTJfRG4zcGR4UzZuOXk0cGhNYUYxRlA1blVxU0hJOUVmc0M3RG1TS2JvUWQzekstS0h2RUNYcFZtY2F1NTliWmtnTWdCNldseHJORElpbkxsbFd3TmdfYzZOWHF5SUFYVVZrVUpTTHRQVUVtTktMSE1PZi16MkJvVG1QY2U3THUxU09KYUJ3UmV5SFBnMFpwXzNnWHJqczVTR2U1VkhVMXRzOVotQkZhN2pycTZxTjFKYjV0OHZ5ZmtHSUlVUzkyMTFZUF9TTFdOT0RmYW1nZnZnUnQyMGtnTnlWMUtyM2otOVBJYUpQZVNtaU50SkNCMVZ2cVFwQWhqdEwzM1M5TTg2YUVDd200YVZ4aEtIR2p0Z1FFVFJEVkVVdS1qRHl4ZDZpV0E2dmhqdmRjV1JGRFgyZFMyS2F3bGNZcm92SmxRelI3TEctQzVQQ3V0cVBFdWI4eXROdHZlQzJTMVFGNm5ndlZPTkVTY2t1YkhLZ0FaT05vOFdGemhaT3BTQWxHNU9hOGpMMk5RbmQ5TXV1OWd4TWtoSllhLWtJSlE4Tld0UWdMUHFSVHgzSGVvMXNNY3had1d0Q0VuaVBtS09xVjRrIiwiZXhwIjoxNjM3NTc1NjYwLCJhdWQiOiJ2aXppYS5icmFuZHdhdGNoLmNvbS9mb290LWd1biIsImlzcyI6ImxvZ2luLmJyYW5kd2F0Y2guY29tIiwic3ViIjoiMTY2MDQ0OTExIn0.asdYq1Q-TAlAnJljbzRL-xNH8FLpwfj2DPORXeydrQ2ZzouUbm1I9Ww2jqSKNGBud3227Xaz-sNqzdfa1MLaRqnGFI98PWW7AbsPqJRgaTu30AkOhygIe5CW-m_fWG26PUqXWL2CeR_yal4hTMYOjv8r3Pk85rpbwPOlFW6theYCbfY0XJPwHtX8WTcBaQKKcMqyyCobgtT6laaF25bVo09_SsKUT2pH018TwIhMdLlxeWnB38dIrZb5oyIMZERBzAwqoCNFi4EMpktPE09u0HW-ai_-1GAFKRSYYw7nFiFyJuRmD1j36OWsMkzt30dDwg_uJ-PlA8g68JvTwWAkkLGkFbwVRDrA7pG6jnLsATrsbdDDPYRcg4IUOy-tQYBym7UZhSKdcjB71FvyjvuEYJGdksD04z1d3Rj6rvR2IjQ0wMs5SIX_q8nTIeTt8rpGjq3_YGl_r2tQhQQfFEl30pS4jMbfGQr6pRHzixToAxjVTAXZgW4aNACQPG3qjH7Pqz9DvlLurtPlBhqaRN9HzKoANVJ0w-uqZ8Eeg79qu2iflS2ANPDilf1B0zVrFco97QIVHl2domLIMfokx1HeIXPR__gxfnKQKGSH6ez24wEIaDuEKViLumNXr38vFpfZ-nGxyqTF5KsN2afZ5m-mK90RvTzPGjGTwDXrvlk5gvk",
+                viewportUnits: {
+                    width: 465,
+                    height: 817
+                },
+                isInteractive: false,
+                applyBackground: true
+            }
+        };
+
+        el.contentWindow.postMessage(config, 'https://bundle-loader.vizia-stage.gcp0.bwcom.net');
+    });
+</script>
+
+</html>
